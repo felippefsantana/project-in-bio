@@ -13,6 +13,7 @@ export function UserCard() {
           className="rounded-full object-cover w-full h-full"
         />
       </div>
+
       <div className="flex flex-col gap-2 w-full">
         <div className="flex items-center gap-2">
           <h3 className="text-3xl font-bold min-w-0 overflow-hidden">
@@ -20,28 +21,30 @@ export function UserCard() {
           </h3>
         </div>
         <p className="opacity-40">"Eu faço programa"</p>
-        <div className="flex flex-col gap-2 w-full">
-          <span className="uppercase text-xs font-medium">Links</span>
-          <div className="flex justify-between gap-3">
-            {icons.map((Icon, index) => (
-              <button
-                key={index}
-                className="p-3 rounded-xl bg-[#1E1E1E] hover:bg-[#2E2E2E]"
-              >
-                <Icon />
-              </button>
-            ))}
-          </div>
-          <div className="flex flex-col gap-3 w-full h-[172px]">
-            <div className="w-full flex flex-col items-center gap-3">
-              <Button size="lg" className="w-full">
-                Template SaaS - Compre agora
-              </Button>
-              <button className="p-3 rounded-xl bg-[#1E1E1E] hover:bg-[#2E2E2E]">
-                <Plus />
-              </button>
-            </div>
-          </div>
+      </div>
+
+      <div className="flex flex-col gap-2 w-full">
+        <span className="uppercase text-xs font-medium">Links</span>
+        <div className="flex justify-between gap-3">
+          {icons.map((Icon, index) => (
+            <button
+              key={index}
+              className="p-3 rounded-xl bg-[#1E1E1E] hover:bg-[#2E2E2E]"
+            >
+              <Icon />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-3 w-full h-[172px]">
+        <div className="w-full flex flex-col items-center gap-3">
+          <Button size="lg" className="w-full">
+            Template SaaS - Compre agora
+          </Button>
+          <button className="p-3 rounded-xl bg-[#1E1E1E] hover:bg-[#2E2E2E]">
+            <Plus />
+          </button>
         </div>
       </div>
     </div>

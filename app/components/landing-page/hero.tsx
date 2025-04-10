@@ -1,3 +1,4 @@
+import { TotalVisits } from "../commons/total-visits";
 import { UserCard } from "../commons/user-card";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -14,7 +15,7 @@ export function Hero() {
           <br />
           Acompanhe o engajamento com Analytics de cliques
         </h2>
-        <div className="flex items-center gap-2 w-full -mt-[10vh]">
+        <div className="flex items-center gap-2 w-full mt-[10vh]">
           <span className="text-white text-xl">projectinbio.com</span>
           <Input type="text" placeholder="Seu link" />
           <Button>Criar agora</Button>
@@ -26,7 +27,7 @@ export function Hero() {
           <UserCard />
 
           <div className="absolute -bottom-[7%] -right-[45%]">
-            {/* <TotalVisits /> */}
+            <TotalVisits />
           </div>
           <div className="absolute top-[20%] -left-[45%] -z-10">
             {/* <ProjectCard /> */}
